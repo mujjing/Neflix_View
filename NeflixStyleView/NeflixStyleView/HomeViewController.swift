@@ -29,6 +29,7 @@ class HomeViewController: UICollectionViewController {
         
         //CollectionView Item(cell)설정
         collectionView.register(ContentCollectionViewCell.self, forCellWithReuseIdentifier: "ContentCollectionViewCell")
+        collectionView.register(ContentCollectionViewHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "ContentCollectionViewHeader")
     }
     
     func getContents() -> [Content] {
@@ -61,6 +62,19 @@ extension HomeViewController {
             return cell
         default:
             return UICollectionViewCell()
+        }
+    }
+    
+    //헤더뷰 설정
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionHeader {
+            guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ContentCollectionViewHeader", for: indexPath) as? ContentCollectionViewHeader else { fatalError() }
+            
+            headerView.sectionNameLabel.text = contents[indexPath.section].sectionName
+            return headerView
+        } else {
+            return UICollectionReusableView()
         }
     }
     
