@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,11 +12,11 @@
 		DB054A9F274BED1B0064A9A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB054A9E274BED1B0064A9A1 /* Assets.xcassets */; };
 		DB054AA2274BED1B0064A9A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB054AA0274BED1B0064A9A1 /* LaunchScreen.storyboard */; };
 		DB054AAA274BEDCC0064A9A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB054AA9274BEDCC0064A9A1 /* HomeViewController.swift */; };
-		DB054AAD274BF0C30064A9A1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DB054AAC274BF0C30064A9A1 /* SnapKit */; };
 		DB054AAF274BF2EF0064A9A1 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB054AAE274BF2EF0064A9A1 /* Content.swift */; };
 		DB054AB1274BF30F0064A9A1 /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB054AB0274BF30F0064A9A1 /* Content.plist */; };
 		DB054AB3274BF5FB0064A9A1 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB054AB2274BF5FB0064A9A1 /* ContentCollectionViewCell.swift */; };
 		DB054AB5274BF8D90064A9A1 /* ContentCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB054AB4274BF8D90064A9A1 /* ContentCollectionViewHeader.swift */; };
+		DB9505EB274C004200DE50F5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DB9505EA274C004200DE50F5 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB054AAD274BF0C30064A9A1 /* SnapKit in Frameworks */,
+				DB9505EB274C004200DE50F5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +50,7 @@
 			children = (
 				DB054A94274BED190064A9A1 /* NeflixStyleView */,
 				DB054A93274BED190064A9A1 /* Products */,
+				DB9505E9274C004200DE50F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +79,13 @@
 			path = NeflixStyleView;
 			sourceTree = "<group>";
 		};
+		DB9505E9274C004200DE50F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,7 +103,7 @@
 			);
 			name = NeflixStyleView;
 			packageProductDependencies = (
-				DB054AAC274BF0C30064A9A1 /* SnapKit */,
+				DB9505EA274C004200DE50F5 /* SnapKit */,
 			);
 			productName = NeflixStyleView;
 			productReference = DB054A92274BED190064A9A1 /* NeflixStyleView.app */;
@@ -117,7 +125,7 @@
 				};
 			};
 			buildConfigurationList = DB054A8D274BED180064A9A1 /* Build configuration list for PBXProject "NeflixStyleView" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -229,7 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -284,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -385,7 +393,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DB054AAC274BF0C30064A9A1 /* SnapKit */ = {
+		DB9505EA274C004200DE50F5 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DB054AAB274BF0C30064A9A1 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
